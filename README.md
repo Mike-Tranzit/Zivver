@@ -24,7 +24,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 		- No side effects. Object once created cannot be modified, so easy to predict its state.
 		- As there are no side effects so testing becomes easy.
 		- It also eases out debugging as there is only one value for the structure.
-	   Disadvantages:
+	 - Disadvantages:
 		- It is difficult to construct cyclic data structures (such as graphs). For example, you have 2 objects that cannot be changed after initialization.
 	 - For objects with nesting, I would use lodash( for cloning objects), immutable.js or wrote functions that return a new reference to an object. For simple objects, I would use Object.freeze or spread operator.
 	
